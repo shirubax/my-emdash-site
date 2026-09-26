@@ -20,8 +20,7 @@
     "astro": "^7.3.2",
     "emdash": "^0.40.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "emdash-plugin-email": "^0.1.0" 
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
