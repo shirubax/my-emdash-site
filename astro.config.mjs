@@ -17,10 +17,10 @@ export default defineConfig({
 		react(),
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
-			plugins: [resend()],
+//			plugins: [resend()],
 			storage: r2({ binding: "MEDIA" }),
-			sandboxRunner: sandbox(),
-            sandboxed: [emdashResend()],
+//			sandboxRunner: sandbox(),
+//            sandboxed: [emdashResend()],
 		}),
 	],
 	fonts: [
