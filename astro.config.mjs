@@ -17,7 +17,7 @@ export default defineConfig({
 		react(),
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
-			plugins: [emdashResend()],
+//			plugins: [emdashResend()],
 			storage: r2({ binding: "MEDIA" }),
 //			sandboxRunner: sandbox(),
 //            sandboxed: [emdashResend()],
