@@ -3,6 +3,7 @@ import react from "@astrojs/react";
 import { d1, r2 } from "@emdash-cms/cloudflare";
 import { defineConfig, fontProviders } from "astro/config";
 import emdash from "emdash/astro";
+import { emdashSmtp } from "emdash-smtp";
 
 export default defineConfig({
 	output: "server",
@@ -15,6 +16,7 @@ export default defineConfig({
 		react(),
 		emdash({
 			database: d1({ binding: "DB", session: "auto" }),
+			plugins: [emdashSmtp()],
 			storage: r2({ binding: "MEDIA" }),
 		}),
 	],
